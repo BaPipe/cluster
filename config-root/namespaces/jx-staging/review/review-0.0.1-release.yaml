@@ -1,0 +1,49 @@
+# Source: review/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-16T21:30:37Z"
+  deletionTimestamp: null
+  name: 'review-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: ad308a7041e0c9b2af3666b4ff2e5ecdc9063fb4
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 45e5e84e5fcbf162ec0e11a146607ca5b0235208
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        chore: Jenkins X build pack
+      sha: 6e75c9063dcf05b083f1fe87f1280b74dde934bc
+  gitHttpUrl: https://github.com/BaPipe/review
+  gitOwner: BaPipe
+  gitRepository: review
+  name: 'review'
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
