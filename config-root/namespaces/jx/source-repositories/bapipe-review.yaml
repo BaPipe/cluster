@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: BaPipe
+    provider: github
+    repository: review
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bapipe-review
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/BaPipe/review.git
+  org: BaPipe
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: review
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/BaPipe/review
