@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         BaPipe/cluster: true
+        BaPipe/review: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         BaPipe/cluster: merge
+        BaPipe/review: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - BaPipe/cluster
+        - BaPipe/review
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - BaPipe/cluster
+        - BaPipe/review
       target_url: http://dashboard-jx.34.68.60.17.nip.io
 kind: ConfigMap
 metadata:
