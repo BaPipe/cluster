@@ -1,0 +1,17 @@
+# Source: sonarqube/templates/tests/test-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sonarqube-sonarqube-tests
+  labels:
+    app: sonarqube
+    chart: sonarqube-4.0.1
+    release: sonarqube
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+data:
+  run.sh: |-
+    @test "Testing Sonarqube UI is accessible" {
+      curl --connect-timeout 5 --retry 12 --retry-delay 1 --retry-max-time 60 sonarqube-sonarqube:9000/sessions/new
+    }

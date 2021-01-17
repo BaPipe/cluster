@@ -83,6 +83,9 @@ releases:
   - ../../versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
   - jx-values.yaml
 - chart: stable/sonarqube
+  name: sonarqube
   namespace: jx
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
