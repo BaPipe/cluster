@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-17T22:29:33Z"
+  creationTimestamp: "2021-01-20T16:17:09Z"
   deletionTimestamp: null
-  name: 'review-0.0.2'
+  name: 'review-0.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.2
-      sha: 75d4ba8b336c492dc3e979ccb4e308d492d91272
+        chore: release 0.0.3
+      sha: c1e3e45ac87ed2787cc1d6fef5c16d5c355bd42b
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 4ca4437534b3e29825d3046d1a5be31047b8b15c
+      sha: 9f2d213b89fc1bffbd965f738ec6b21901429564
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,12 +38,12 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        add: sonarqube condigs
-      sha: aa1be5ab2573cc65d91f7e3f466092de727bba2f
+        fix: rollback to initial state
+      sha: 66f16d8f905e707278e6bcdb903b73e30b956657
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.2
-  version: v0.0.2
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.3
+  version: v0.0.3
 status: {}
