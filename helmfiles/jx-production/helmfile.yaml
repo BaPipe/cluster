@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.68.60.17.nip.io/
+releases:
+- chart: dev/review
+  version: 0.0.4
+  name: review
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
