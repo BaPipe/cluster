@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-22T22:07:49Z"
+  creationTimestamp: "2021-01-22T22:26:47Z"
   deletionTimestamp: null
-  name: 'review-0.0.6'
+  name: 'review-0.0.7'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.6
-      sha: 01a8665c597eaed1b5e16b03e4fdccda4357343c
+        chore: release 0.0.7
+      sha: bfa311246b09fb2c93fe8fc0a4f141c8fe453bdf
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 619c4f9337ae6f16d302dd007c796cdc718cf504
+      sha: 4e8fcbed2bafec6859fe3aa3a9f9b46a47d2b12a
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -39,7 +39,7 @@ spec:
         name: Sascha
       message: |
         fix: sonarqube triggered in pull request now
-      sha: 514e6a27ee2eb632ddf0ffb7f72e150716e05ae4
+      sha: 267e7c974c2f9544f5b36e59aa070477ec2bacbf
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -49,11 +49,11 @@ spec:
         name: Sascha
       message: |
         feat: added sonarqube task to pipeline
-      sha: 51f8ce3a069e48f01ca0cc76f13b9e6378c0ad5f
+      sha: 34678a00dcdccb0868658954c25282267f21a677
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.6
-  version: v0.0.6
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.7
+  version: v0.0.7
 status: {}
