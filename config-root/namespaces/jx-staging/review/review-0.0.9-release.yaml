@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-22T22:59:39Z"
+  creationTimestamp: "2021-01-22T23:41:55Z"
   deletionTimestamp: null
-  name: 'review-0.0.8'
+  name: 'review-0.0.9'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.8
-      sha: 1f7c343751456b12e30436abd7f4d928cdee27f2
+        chore: release 0.0.9
+      sha: b382018e09d2795447f14fc362130bedb59b6be4
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 8e56bf935986876d29561c365a0915da13e11790
+      sha: f78247cbd353b0326c9e77c701d3a6dfa6a13b49
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,8 +38,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: gitops test number 2
-      sha: 67fd7f937fb32784edcaec6a1c5ef0e2b5c6c375
+        test: gitops test number 4
+      sha: 7b591ad474b5cae4de5a912acc606a67564cc5ba
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -48,12 +48,12 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: gitops test
-      sha: 64f7e09f1fed59e85d39cebec9442720fa8214eb
+        test: gitops test number 3
+      sha: d3e95dd684c883d160df3ea5bab7b8a333f03204
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.8
-  version: v0.0.8
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.9
+  version: v0.0.9
 status: {}
