@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-22T19:37:54Z"
+  creationTimestamp: "2021-01-22T22:07:49Z"
   deletionTimestamp: null
-  name: 'review-0.0.5'
+  name: 'review-0.0.6'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.5
-      sha: c61f9059d93b27e89c5e34a210ec11a5af2b8441
+        chore: release 0.0.6
+      sha: 01a8665c597eaed1b5e16b03e4fdccda4357343c
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: b797acdbb4d56cd5dca530c048415bf7f5bedffd
+      sha: 619c4f9337ae6f16d302dd007c796cdc718cf504
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,12 +38,22 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        fix: added name to sonarqube; displays now review now instead of source as poject title
-      sha: a0d76ef54226358e7f4d4dae42aae25ee8beb3ca
+        fix: sonarqube triggered in pull request now
+      sha: 514e6a27ee2eb632ddf0ffb7f72e150716e05ae4
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        feat: added sonarqube task to pipeline
+      sha: 51f8ce3a069e48f01ca0cc76f13b9e6378c0ad5f
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.5
-  version: v0.0.5
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.6
+  version: v0.0.6
 status: {}
