@@ -1,0 +1,69 @@
+# Source: review/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-24T13:51:38Z"
+  deletionTimestamp: null
+  name: 'review-0.0.13'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.13
+      sha: 3dcf2cb8aa8edb01a1a098597cbac68ddda04524
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: e84e7c14fc33877fac39174e91be236cf3763112
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: trying pr
+      sha: aed73fd9ed8c57e3cea0396ced683d072e981b73
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: testing pipeline pr number 2
+      sha: a930557a5058eef751e430d5ff7270daecc4c294
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: testing pipeline pr
+      sha: 8e1244cd0923bca18bd196b6f1c5a5becedec49c
+  gitHttpUrl: https://github.com/BaPipe/review
+  gitOwner: BaPipe
+  gitRepository: review
+  name: 'review'
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.13
+  version: v0.0.13
+status: {}
