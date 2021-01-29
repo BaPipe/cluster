@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-29T12:28:55Z"
+  creationTimestamp: "2021-01-29T16:55:37Z"
   deletionTimestamp: null
-  name: 'review-0.0.14'
+  name: 'review-0.0.15'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.14
-      sha: 0748f09d595040771bc79d20e11228ad8a183a1a
+        chore: release 0.0.15
+      sha: c46edd42423a99bf29034d17a96a6093cea92200
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 10f33e10c7e40677d7a3984dce91c38f916b43d6
+      sha: 65405df02974288e04192db9da23bc90e471a37e
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,32 +38,12 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        feat: test pr
-      sha: 7ac0c3bc9f917cef2d5557389c7f2831490ecc6e
-    - author:
-        email: saschazauner@aol.com
-        name: Sascha
-      branch: master
-      committer:
-        email: saschazauner@aol.com
-        name: Sascha
-      message: |
-        fix: changed sonarqube to pr; test pipeline
-      sha: 9b0304a938464cfa3bdfd1fbe5db81641cc821de
-    - author:
-        email: saschazauner@aol.com
-        name: Sascha
-      branch: master
-      committer:
-        email: saschazauner@aol.com
-        name: Sascha
-      message: |
-        fix: added sonarqube to release and removed from pullrequest
-      sha: ac650dcfe535d79343e32aec3fe0ef0595ff8355
+        feat: testing trigger pr
+      sha: f3ce4b0d1e2c138121c0457dd080fd8d30ec9995
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.14
-  version: v0.0.14
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.15
+  version: v0.0.15
 status: {}
