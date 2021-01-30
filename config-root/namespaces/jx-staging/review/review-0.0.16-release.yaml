@@ -1,0 +1,99 @@
+# Source: review/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-30T13:15:17Z"
+  deletionTimestamp: null
+  name: 'review-0.0.16'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.16
+      sha: 374463777936fe831a7d65287f8ff43756e4ed37
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 7ae7c635c4c61ee5ff2c5f1ccf69b319964a4b1e
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: test 3
+      sha: 6e8ac57c8f2e27c7c4f70d4ac88b29ad989841a2
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: pipeline test2
+      sha: afe9d5ed56a01e7a622dd9ef28ab0419430b02c1
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        feat: test pipe
+      sha: 77650255f6bef3af76240eedf56e8bdf1ec3269e
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: test 2
+      sha: ba67d9135fa4ad61fa68a42b78e93112d6382bbd
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        fix: test
+      sha: 683da19d8f2857690a30f8f00414b7e90ee10f98
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        feat: triger gets sonarqube
+      sha: 9c2602e7ee187e99f581c66c9bf8aff9e229266e
+  gitHttpUrl: https://github.com/BaPipe/review
+  gitOwner: BaPipe
+  gitRepository: review
+  name: 'review'
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.16
+  version: v0.0.16
+status: {}
