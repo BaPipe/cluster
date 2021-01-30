@@ -5,7 +5,7 @@ metadata:
   name: review-review
   labels:
     draft: draft-app
-    chart: "review-0.0.4"
+    chart: "review-0.0.16"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-production
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: review-review
       containers:
         - name: review
-          image: "gcr.io/fair-expanse-297121/review:0.0.4"
+          image: "gcr.io/fair-expanse-297121/review:0.0.16"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.4
+              value: 0.0.16
           envFrom: null
           ports:
             - containerPort: 8080
