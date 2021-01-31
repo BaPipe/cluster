@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: review
   labels:
-    chart: "review-0.0.18"
+    chart: "review-0.0.19"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
