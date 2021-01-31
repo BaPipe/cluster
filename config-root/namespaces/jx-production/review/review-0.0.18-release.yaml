@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-21T15:56:08Z"
+  creationTimestamp: "2021-01-31T14:49:23Z"
   deletionTimestamp: null
-  name: 'review-0.0.4'
+  name: 'review-0.0.18'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.4
-      sha: 0d41a0833308c27b06d2205b456637105fc5b2ce
+        chore: release 0.0.18
+      sha: b9368991f284df6b51dbe3697ce4ad861d43b86a
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 81552ccbf58d1657de7ebd30bb6732fc9c007798
+      sha: 75d028d54e97ceea40a3da8678f811a28d755443
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,8 +38,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: ip with http #2
-      sha: 17aa0f4fa83d1eea5694d3d0db9c973cc9b714e0
+        test: triggering pr 2
+      sha: 23f6841cf4cc8cec2b6f55c9b61f164de90b0806
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -48,8 +48,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: ip with http
-      sha: aaabaf89e7a3cd80549e822be705fad89bab07d9
+        test: triggering pr
+      sha: c7e132e4e64d84af35f51893826f70a2e4837175
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -58,12 +58,12 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        add: sonarqube and call command in pipeline
-      sha: d704ccff6373a39bd0ec491dbac41456d7da3221
+        fix: fixing pipeline with sonar from release to pr pipeline (maybe) 2
+      sha: 4dced08ddc135dd084534cbbd1c402b1cbe69604
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.4
-  version: v0.0.4
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.18
+  version: v0.0.18
 status: {}
