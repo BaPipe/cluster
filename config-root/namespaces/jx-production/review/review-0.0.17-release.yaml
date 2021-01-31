@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-21T15:56:08Z"
+  creationTimestamp: "2021-01-31T13:13:19Z"
   deletionTimestamp: null
-  name: 'review-0.0.4'
+  name: 'review-0.0.17'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.4
-      sha: 0d41a0833308c27b06d2205b456637105fc5b2ce
+        chore: release 0.0.17
+      sha: 930cdba0e4d6a6289944da27cb43e762f46ef64a
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 81552ccbf58d1657de7ebd30bb6732fc9c007798
+      sha: 355137b67e64aa8233e3d009aabbee4352a411ba
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,8 +38,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: ip with http #2
-      sha: 17aa0f4fa83d1eea5694d3d0db9c973cc9b714e0
+        fix: fixing pipeline with sonar from release to pr pipeline (maybe)
+      sha: bf62de7e45fd8768253e645e02235b8c620c0ceb
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -48,8 +48,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        test: ip with http
-      sha: aaabaf89e7a3cd80549e822be705fad89bab07d9
+        fix: testing pipeline if working 2
+      sha: 8b3abcfa2b70bfff9a3f09ef43c1f2c55caa397b
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -58,12 +58,22 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        add: sonarqube and call command in pipeline
-      sha: d704ccff6373a39bd0ec491dbac41456d7da3221
+        test: trigger release pipeline
+      sha: b4c6f82e5ad58e71d5fc99bc0f35c0a2dd7ca7e9
+    - author:
+        email: saschazauner@aol.com
+        name: Sascha
+      branch: master
+      committer:
+        email: saschazauner@aol.com
+        name: Sascha
+      message: |
+        feat: added Sonarqube analyse to release
+      sha: 59e769733138e7d31b83c1988716196f1be4cd5f
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.4
-  version: v0.0.4
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.17
+  version: v0.0.17
 status: {}
