@@ -9,7 +9,7 @@ repositories:
   url: http://chartmuseum-jx.34.68.60.17.nip.io/
 releases:
 - chart: dev/review
-  version: 0.0.4
+  version: 0.0.17
   name: review
   values:
   - jx-values.yaml
