@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-30T13:15:17Z"
+  creationTimestamp: "2021-01-31T13:13:19Z"
   deletionTimestamp: null
-  name: 'review-0.0.16'
+  name: 'review-0.0.17'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.16
-      sha: 374463777936fe831a7d65287f8ff43756e4ed37
+        chore: release 0.0.17
+      sha: 930cdba0e4d6a6289944da27cb43e762f46ef64a
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 7ae7c635c4c61ee5ff2c5f1ccf69b319964a4b1e
+      sha: 355137b67e64aa8233e3d009aabbee4352a411ba
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -38,8 +38,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        fix: test 3
-      sha: 6e8ac57c8f2e27c7c4f70d4ac88b29ad989841a2
+        fix: fixing pipeline with sonar from release to pr pipeline (maybe)
+      sha: bf62de7e45fd8768253e645e02235b8c620c0ceb
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -48,8 +48,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        fix: pipeline test2
-      sha: afe9d5ed56a01e7a622dd9ef28ab0419430b02c1
+        fix: testing pipeline if working 2
+      sha: 8b3abcfa2b70bfff9a3f09ef43c1f2c55caa397b
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -58,8 +58,8 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        feat: test pipe
-      sha: 77650255f6bef3af76240eedf56e8bdf1ec3269e
+        test: trigger release pipeline
+      sha: b4c6f82e5ad58e71d5fc99bc0f35c0a2dd7ca7e9
     - author:
         email: saschazauner@aol.com
         name: Sascha
@@ -68,32 +68,12 @@ spec:
         email: saschazauner@aol.com
         name: Sascha
       message: |
-        fix: test 2
-      sha: ba67d9135fa4ad61fa68a42b78e93112d6382bbd
-    - author:
-        email: saschazauner@aol.com
-        name: Sascha
-      branch: master
-      committer:
-        email: saschazauner@aol.com
-        name: Sascha
-      message: |
-        fix: test
-      sha: 683da19d8f2857690a30f8f00414b7e90ee10f98
-    - author:
-        email: saschazauner@aol.com
-        name: Sascha
-      branch: master
-      committer:
-        email: saschazauner@aol.com
-        name: Sascha
-      message: |
-        feat: triger gets sonarqube
-      sha: 9c2602e7ee187e99f581c66c9bf8aff9e229266e
+        feat: added Sonarqube analyse to release
+      sha: 59e769733138e7d31b83c1988716196f1be4cd5f
   gitHttpUrl: https://github.com/BaPipe/review
   gitOwner: BaPipe
   gitRepository: review
   name: 'review'
-  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.16
-  version: v0.0.16
+  releaseNotesURL: https://github.com/BaPipe/review/releases/tag/v0.0.17
+  version: v0.0.17
 status: {}
